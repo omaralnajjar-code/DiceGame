@@ -14,13 +14,14 @@ class MainScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainscreen)
     }
-
+// Moves to Dice Game(GameScreen Activity)
     fun clickgamescreen(view: View) {
         if (startbtn.isClickable) {
             val myIntent = Intent(this, GameScreen::class.java)
             startActivity(myIntent)
         }
     }
+    //OnClick Quit Function with AlertDialog with Yes,No and Cancel Options
         fun clickquit(view: View) {
             // Set a click listener for button widget
             quitbtn.setOnClickListener {
