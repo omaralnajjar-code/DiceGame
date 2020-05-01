@@ -15,8 +15,6 @@ class GameScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game_screen)
-        //val rolldices: ImageView = findViewById(R.id.iv_dice)
-        //rolldices.setOnClickListener(rollDice())
     }
 
     //Counter Variables for each dice face
@@ -29,6 +27,10 @@ class GameScreen : AppCompatActivity() {
     fun rollDice(view: View) {
         //Creates Random variable to randomize each dice roll
         val r = Random().nextInt(6) + 1
+        /*If Statement to set condition for specific faces on random number
+        and display their corresponding dice image and increment counter after each click
+        and display to user by textview
+        */
         if (r == 1) {
             iv_dice.setImageResource(dice)
             count1++
@@ -60,14 +62,10 @@ class GameScreen : AppCompatActivity() {
             tv6.text = "6:$count6"
         }
     }
+    // Function that resets all counters to zero
     fun reset2zero(view: View) {
         if (view == resetbtn) {
-            count1 = 0
-            count2 = 0
-            count3 = 0
-            count4 = 0
-            count5 = 0
-            count6 = 0
+            count1 = 0;count2 = 0;count3 = 0;count4 = 0;count5 = 0;count6 = 0
             tv1.text = "1:$count1"
             tv2.text = "2:$count2"
             tv3.text = "3:$count3"
