@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dice Game</string>
+    <string name="reset_button">Reset</string>
+    <string name="dice_count1">1:</string>
+    <string name="dice_count2">2:</string>
+    <string name="dice_count3">3:</string>
+    <string name="dice_count4">4:</string>
+    <string name="dice_count5">5:</string>
+    <string name="dice_count6">6:</string>
+</resources>
